@@ -1,0 +1,247 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<title>EQUATOR</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+<!-- Header -->
+
+<header>
+
+<a href="index.html" class="logo">EquatorLine</a>
+
+		<ul>
+
+				<li><a href="#banner">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#team">Team</a></li>
+				<li><a href="#partners">Partners</a></li>
+
+
+
+
+		</ul>
+
+
+
+</header>
+
+<!-- Header End -->
+
+<!-- Hero -->
+<section id="banner">
+				<div class="wave wave1"></div>
+				<div class="wave wave2"></div>
+				<div class="wave wave3"></div>
+				<div class="wave wave4"></div>
+
+<h1 class="hero-heading">Hello! Come Enjoy With Us</h1>
+
+
+
+</section>
+
+<!-- Hero End -->
+
+<!-- About  -->
+
+	<section id="about">
+
+						<div class="main">
+
+
+						<img src="img/aboutus.jpg">
+
+						<div class="about-text">
+
+
+						<h1>About Us</h1>
+
+
+						<h5>Developer & <span class="stop">Designer.</span></h5>
+
+						<p>Welcome to EquatorLine, your number one source for all things. We're dedicated to providing you the best of services, with a focus on dependability.
+
+
+						We're working to turn our passion for services into a booming online store. We hope you enjoy our products as much as we enjoy offering them to you.
+
+						</p>
+
+						</div>
+
+						</div>
+
+	</section>
+
+<!-- about End -->
+
+<!-- Our Services  -->
+
+
+<section id="services">
+<h1 class="service-heading">Services</h1>
+<div class="container">
+<div class="wrapper">
+<div class="box">
+<h2>01</h2>
+<h3>Developing</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique fringilla ante, nec venenatis leo viverra ac. Aliquam sollicitudin eget felis ut viverra.
+ Nulla molestie urna ac tortor laoreet luctus. Pellentesque habitant morbi tristique senectus et netus.</p>
+</div>
+<div class="box">
+<h2>02</h2>
+<h3>Designing</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique fringilla ante, nec venenatis leo viverra ac. Aliquam sollicitudin eget felis ut viverra.
+ Nulla molestie urna ac tortor laoreet luctus. Pellentesque habitant morbi tristique senectus et netus</p>
+</div>
+<div class="box">
+<h2>03</h2>
+<h3>Graphics</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique fringilla ante, nec venenatis leo viverra ac. Aliquam sollicitudin eget felis ut viverra.
+ Nulla molestie urna ac tortor laoreet luctus. Pellentesque habitant morbi tristique senectus et netus
+ </p>
+</div>
+</div>
+
+
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+<!-- Our Services End -->
+
+
+
+
+<section id="team">
+<h1 class="team-heading">Our Team</h1>
+<div class="team-container">
+<div class="team-wrapper">
+<div class="sm-box">
+<h2>Hamid</h2>
+<h3>Developer</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique fringilla ante, nec venenatis leo viverra ac. Aliquam sollicitudin eget felis ut viverra.
+ Nulla molestie urna ac tortor laoreet luctus. Pellentesque habitant morbi tristique senectus et netus.</p>
+</div>
+<div class="sm-box">
+<h2>Anila</h2>
+<h3>As. Developer</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique fringilla ante, nec venenatis leo viverra ac. Aliquam sollicitudin eget felis ut viverra.
+ Nulla molestie urna ac tortor laoreet luctus. Pellentesque habitant morbi tristique senectus et netus</p>
+</div>
+<div class="sm-box">
+<h2>Sumera</h2>
+<h3>Designer</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tristique fringilla ante, nec venenatis leo viverra ac. Aliquam sollicitudin eget felis ut viverra.
+ Nulla molestie urna ac tortor laoreet luctus. Pellentesque habitant morbi tristique senectus et netus
+ </p>
+</div>
+ 
+</div>
+
+
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+<section id="partners">
+<h1 class="team-heading">Our Partners</h1>
+<div class="main-container">
+<div class="content-part">
+
+<h3>Apple</h3>
+<h3>Dribble</h3>
+<h3>RockStar</h3>
+<h3>Unreal Engine</h3>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<footer>
+
+<h1>Copyright by Equator Line</h1>
+
+
+
+</footer>
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+window.addEventListener("scroll", function(){
+
+var header = document.querySelector("header");
+
+header.classList.toggle("sticky", window.scrollY > 0);
+
+});
+</script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+
+</script>
+
+</body>
+
+
+
+
+</html>
